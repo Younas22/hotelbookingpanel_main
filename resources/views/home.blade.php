@@ -67,6 +67,12 @@
 @include('partials._hero-hotel')
 @include('partials._trust-hotel')
 @include('partials._features-hotel')
+@include('partials._booking-website-hotel')
+@include('partials._admin-dashboard-hotel')
+@include('partials._benefits-hotel')
+@include('partials._steps-hotel')
+@include('partials._advanced-features-hotel')
+@include('partials._pricing-hotel')
 
 
 <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
