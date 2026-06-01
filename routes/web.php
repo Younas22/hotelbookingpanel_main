@@ -23,6 +23,8 @@ Route::get('/pricing', [PublicController::class, 'pricing'])->name('pricing');
 Route::get('/demo', [PublicController::class, 'demo'])->name('demo');
 Route::get('/faq', [PublicController::class, 'faq'])->name('faq');
 Route::get('/contact', [PublicController::class, 'contact'])->name('contact');
+Route::get('/privacy-policy', fn() => view('privacy-policy'))->name('privacy-policy');
+Route::get('/terms-of-service', fn() => view('terms-of-service'))->name('terms-of-service');
 
 // Public blog routes
 Route::get('/blogs', [PublicController::class, 'blogs'])->name('blogs.index');

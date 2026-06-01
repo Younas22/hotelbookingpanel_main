@@ -309,7 +309,7 @@
                 </a> -->
 
                 <p class="hbp-foot-tagline">
-                    Complete Hotel Booking Software<br>Built To Own, <span>Not To Rent.</span>
+                    Complete Hotel Booking Software<br>Built To Own, <span>Not To Rent.</span><br>Your Brand. Your Revenue. Forever.
                 </p>
 
                 <div class="hbp-foot-socials" style="display: none;">
@@ -403,8 +403,8 @@
                 &copy; 2026 <span>HotelBookingPanel</span>. All rights reserved.
             </p>
             <nav class="hbp-foot-bar-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+                <a href="{{ route('privacy-policy') }}">Privacy Policy</a>
+                <a href="{{ route('terms-of-service') }}">Terms of Service</a>
             </nav>
         </div>
 
