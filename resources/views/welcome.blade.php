@@ -3,22 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LimoSchedule &mdash; Self-Hosted Automated Limo Booking System</title>
+    <title>HotelBookingPanel &mdash; Self-Hosted Automated Limo Booking System</title>
     <meta name="description" content="Self-hosted, white-label limo booking system. Install on your own server in 30 minutes. Full source code included. One-time license.">
-    <meta name="author" content="LimoSchedule">
+    <meta name="author" content="HotelBookingPanel">
     <link rel="canonical" href="{{ url('/') }}">
 
     <!-- Open Graph -->
     <meta property="og:type"        content="website">
     <meta property="og:url"         content="{{ url('/') }}">
-    <meta property="og:title"       content="LimoSchedule — Self-Hosted Automated Limo Booking System">
+    <meta property="og:title"       content="HotelBookingPanel — Self-Hosted Automated Limo Booking System">
     <meta property="og:description" content="Self-hosted, white-label limo booking system. Install on your own server in 30 minutes. Full source code included. One-time license.">
     <meta property="og:image"       content="{{ url('public/logo/favicon.png') }}">
-    <meta property="og:site_name"   content="LimoSchedule">
+    <meta property="og:site_name"   content="HotelBookingPanel">
 
     <!-- Twitter Card -->
     <meta name="twitter:card"        content="summary">
-    <meta name="twitter:title"       content="LimoSchedule — Self-Hosted Automated Limo Booking System">
+    <meta name="twitter:title"       content="HotelBookingPanel — Self-Hosted Automated Limo Booking System">
     <meta name="twitter:description" content="Self-hosted, white-label limo booking system. Install on your own server in 30 minutes. Full source code included. One-time license.">
     <meta name="twitter:image"       content="{{ url('public/logo/favicon.png') }}">
 
@@ -136,11 +136,11 @@
         <div class="flex items-center justify-between h-[66px]">
 
             <!-- â”€â”€â”€ Official Logo â”€â”€â”€ -->
-            <a href="{{ url('/') }}" class="flex-shrink-0 block" aria-label="LimoSchedule &mdash; Home">
+            <a href="{{ url('/') }}" class="flex-shrink-0 block" aria-label="HotelBookingPanel &mdash; Home">
                 <div class="logo-badge rounded-xl px-3 py-[7px]">
                     <img
                         src="{{ url('public/logo/logo-white.png') }}"
-                        alt="LimoSchedule &mdash; Automated Limo Booking System"
+                        alt="HotelBookingPanel &mdash; Automated Limo Booking System"
                         class="h-[30px] w-auto block"
                         loading="eager"
                         decoding="sync"
@@ -458,7 +458,7 @@
             Every missed call, every manual booking, every dispatch error is revenue leaving your business.
         </p>
         <p class="text-gray-500 text-base max-w-xl mx-auto mb-8 leading-relaxed">
-            LimoSchedule is the enterprise-grade, self-hosted limo booking system that automates your entire operation &mdash; AI agent, voice search, fleet dispatch, and real-time control. <span class="text-white font-semibold">One-time license. Yours forever.</span>
+            HotelBookingPanel is the enterprise-grade, self-hosted limo booking system that automates your entire operation &mdash; AI agent, voice search, fleet dispatch, and real-time control. <span class="text-white font-semibold">One-time license. Yours forever.</span>
         </p>
 
         <!-- Price badge -->
@@ -655,7 +655,7 @@
         <div class="text-center section-fade" style="transition-delay: 0.35s">
             <div class="inline-block px-8 py-5 rounded-2xl mb-6" style="background: rgba(59,130,246,0.06); border: 1px solid rgba(59,130,246,0.2);">
                 <p class="text-[18px] sm:text-[22px] font-bold text-white leading-snug">
-                    LimoSchedule eliminates every one of these problems.<br>
+                    HotelBookingPanel eliminates every one of these problems.<br>
                     <span class="text-blue-400">One system. One payment. Zero recurring costs.</span>
                 </p>
             </div>
@@ -1006,7 +1006,7 @@
                             <span class="w-2.5 h-2.5 rounded-full" style="background: rgba(234,179,8,0.7);"></span>
                             <span class="w-2.5 h-2.5 rounded-full" style="background: rgba(34,197,94,0.7);"></span>
                         </div>
-                        <span class="text-[10.5px] font-medium text-gray-600 tracking-[0.1em] uppercase select-none">Voice Interface Â· LimoSchedule AI</span>
+                        <span class="text-[10.5px] font-medium text-gray-600 tracking-[0.1em] uppercase select-none">Voice Interface Â· HotelBookingPanel AI</span>
                         <div class="flex items-center gap-1.5">
                             <span class="w-1.5 h-1.5 rounded-full bg-green-400" style="box-shadow: 0 0 7px rgba(74,222,128,0.9);"></span>
                             <span class="text-[10px] text-green-400 font-bold tracking-wider">LIVE</span>
@@ -2711,7 +2711,7 @@
             <!-- Buttons -->
             <div class="flex flex-col sm:flex-row items-center gap-3">
                 <a href="#contact" class="btn-cta inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-semibold text-[14px] text-white" style="background: #3B82F6;">
-                    <span>Get LimoSchedule</span>
+                    <span>Get HotelBookingPanel</span>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                 </a>
                 <a href="#features" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-medium text-[14px] text-gray-300 hover:text-white transition-colors duration-200" style="border: 1px solid rgba(255,255,255,0.1);">
@@ -2768,7 +2768,7 @@
                 </button>
                 <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
                     <div class="px-6 pb-6 pl-[4.25rem]">
-                        <p class="text-gray-400 text-[14px] leading-relaxed">No &mdash; LimoSchedule is <span class="text-white font-medium">not SaaS</span>. There are no monthly fees, no subscriptions, and no data sent to our servers. You purchase a one-time license and receive the full source code to deploy on your own infrastructure. Your data stays on your server, always.</p>
+                        <p class="text-gray-400 text-[14px] leading-relaxed">No &mdash; HotelBookingPanel is <span class="text-white font-medium">not SaaS</span>. There are no monthly fees, no subscriptions, and no data sent to our servers. You purchase a one-time license and receive the full source code to deploy on your own infrastructure. Your data stays on your server, always.</p>
                     </div>
                 </div>
             </div>
@@ -2786,7 +2786,7 @@
                 </button>
                 <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
                     <div class="px-6 pb-6 pl-[4.25rem]">
-                        <p class="text-gray-400 text-[14px] leading-relaxed">Absolutely. LimoSchedule is built to be self-hosted on any VPS, dedicated server, or cloud provider &mdash; AWS, DigitalOcean, Hetzner, or your own hardware. You get complete control over your environment, database, and backups. <span class="text-white font-medium">No vendor dependency whatsoever.</span></p>
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Absolutely. HotelBookingPanel is built to be self-hosted on any VPS, dedicated server, or cloud provider &mdash; AWS, DigitalOcean, Hetzner, or your own hardware. You get complete control over your environment, database, and backups. <span class="text-white font-medium">No vendor dependency whatsoever.</span></p>
                     </div>
                 </div>
             </div>
@@ -2804,7 +2804,7 @@
                 </button>
                 <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
                     <div class="px-6 pb-6 pl-[4.25rem]">
-                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes &mdash; LimoSchedule is fully white-label ready. Replace the logo, colors, domain, and product name to match any limo or transportation brand. Agencies and developers can <span class="text-white font-medium">deploy it under their own brand</span> for multiple clients under a single license. Full white-label &amp; branding freedom included.</p>
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes &mdash; HotelBookingPanel is fully white-label ready. Replace the logo, colors, domain, and product name to match any limo or transportation brand. Agencies and developers can <span class="text-white font-medium">deploy it under their own brand</span> for multiple clients under a single license. Full white-label &amp; branding freedom included.</p>
                     </div>
                 </div>
             </div>
@@ -2840,7 +2840,7 @@
                 </button>
                 <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
                     <div class="px-6 pb-6 pl-[4.25rem]">
-                        <p class="text-gray-400 text-[14px] leading-relaxed">Most installs go live in <span class="text-white font-medium">under 30 minutes</span>. Upload the files, configure your <code class="text-blue-400 text-[13px] px-1.5 py-0.5 rounded" style="background: rgba(59,130,246,0.1);">.env</code>, run the installer, and you're done. The step-by-step documentation covers every major hosting environment. No developer experience required &mdash; if you can set up a WordPress site, you can install LimoSchedule.</p>
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Most installs go live in <span class="text-white font-medium">under 30 minutes</span>. Upload the files, configure your <code class="text-blue-400 text-[13px] px-1.5 py-0.5 rounded" style="background: rgba(59,130,246,0.1);">.env</code>, run the installer, and you're done. The step-by-step documentation covers every major hosting environment. No developer experience required &mdash; if you can set up a WordPress site, you can install HotelBookingPanel.</p>
                     </div>
                 </div>
             </div>
@@ -3198,7 +3198,7 @@
             <div class="grid grid-cols-3 rounded-2xl overflow-hidden text-[12.5px]" style="border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02);">
                 <div class="px-4 py-3 font-bold text-gray-500 border-b" style="border-color: rgba(255,255,255,0.06);"></div>
                 <div class="px-4 py-3 text-center font-bold text-gray-500 border-b border-l" style="border-color: rgba(255,255,255,0.06);">Others</div>
-                <div class="px-4 py-3 text-center font-bold text-blue-400 border-b border-l" style="border-color: rgba(59,130,246,0.2); background: rgba(59,130,246,0.05);">LimoSchedule</div>
+                <div class="px-4 py-3 text-center font-bold text-blue-400 border-b border-l" style="border-color: rgba(59,130,246,0.2); background: rgba(59,130,246,0.05);">HotelBookingPanel</div>
 
                 <div class="px-4 py-2.5 text-gray-400 border-b" style="border-color: rgba(255,255,255,0.05);">Full-time dispatcher</div>
                 <div class="px-4 py-2.5 text-center text-red-400 border-b border-l" style="border-color: rgba(255,255,255,0.05);">~$45,000/yr</div>
@@ -3216,7 +3216,7 @@
                 <div class="px-4 py-2.5 text-center text-red-400 border-b border-l" style="border-color: rgba(255,255,255,0.05);">$2,000+</div>
                 <div class="px-4 py-2.5 text-center text-green-400 font-bold border-b border-l" style="border-color: rgba(59,130,246,0.15); background: rgba(59,130,246,0.03);">Eliminated</div>
 
-                <div class="px-4 py-3 text-white font-bold">LimoSchedule</div>
+                <div class="px-4 py-3 text-white font-bold">HotelBookingPanel</div>
                 <div class="px-4 py-3 text-center text-red-400 font-bold border-l" style="border-color: rgba(255,255,255,0.05);">All of the above</div>
                 <div class="px-4 py-3 text-center font-black text-blue-400 text-[16px] border-l" style="border-color: rgba(59,130,246,0.2); background: rgba(59,130,246,0.05);">$1,999 once</div>
             </div>
@@ -3310,11 +3310,11 @@
             <!-- Brand column -->
             <div class="flex flex-col gap-6">
                 <!-- Logo -->
-                <a href="{{ url('/') }}" class="inline-block" aria-label="LimoSchedule &mdash; Home">
+                <a href="{{ url('/') }}" class="inline-block" aria-label="HotelBookingPanel &mdash; Home">
                     <div class="logo-badge rounded-xl px-3 py-[7px] inline-flex">
                         <img
                             src="{{ url('public/logo/logo-white.png') }}"
-                            alt="LimoSchedule"
+                            alt="HotelBookingPanel"
                             class="h-[30px] w-auto block"
                             loading="lazy"
                             decoding="async"
@@ -3375,7 +3375,7 @@
 
             <!-- Copyright -->
             <p class="text-gray-600 text-[12.5px] text-center sm:text-left">
-                &copy; {{ date('Y') }} LimoSchedule. All rights reserved. Self-hosted &amp; white-label limo booking software.
+                &copy; {{ date('Y') }} HotelBookingPanel. All rights reserved. Self-hosted &amp; white-label limo booking software.
             </p>
 
             <!-- Made with / badges -->
