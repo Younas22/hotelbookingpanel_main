@@ -69,12 +69,17 @@
     }
 
     .hbp-foot-tagline {
-        font-size: 13.5px;
-        font-weight: 400;
-        color: #8b9ab5;
-        line-height: 1.65;
-        max-width: 270px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #e2e8f0;
+        line-height: 1.4;
+        max-width: 320px;
         margin-bottom: 28px;
+        letter-spacing: -0.02em;
+    }
+
+    .hbp-foot-tagline span {
+        color: #3B82F6;
     }
 
     /* Social pills */
@@ -215,18 +220,26 @@
 
     .hbp-foot-bar-links {
         display: flex;
-        gap: 24px;
+        gap: 10px;
     }
 
     .hbp-foot-bar-links a {
-        font-size: 12.5px;
-        color: #475569;
+        font-size: 12px;
+        font-weight: 500;
+        color: #94a3b8;
         text-decoration: none;
-        transition: color 0.2s;
+        padding: 5px 14px;
+        border-radius: 20px;
+        border: 1px solid rgba(255,255,255,0.1);
+        background: rgba(255,255,255,0.04);
+        transition: background 0.2s, border-color 0.2s, color 0.2s;
+        letter-spacing: 0.01em;
     }
 
     .hbp-foot-bar-links a:hover {
-        color: #94a3b8;
+        background: rgba(59,130,246,0.12);
+        border-color: rgba(59,130,246,0.35);
+        color: #60a5fa;
     }
 
     /* ─── Divider line decoration ─── */
@@ -291,15 +304,15 @@
 
             {{-- Brand column --}}
             <div class="hbp-foot-brand hbp-foot-fade">
-                <a href="{{ url('/') }}" class="hbp-foot-logo">
+                <!-- <a href="{{ url('/') }}" class="hbp-foot-logo">
                     <img src="{{ url('public/logo/logo-white.png') }}" alt="HotelBookingPanel" style="height:32px;width:auto;display:block;">
-                </a>
+                </a> -->
 
                 <p class="hbp-foot-tagline">
-                    Complete Hotel Booking Software<br>Built To Own, Not To Rent.
+                    Complete Hotel Booking Software<br>Built To Own, <span>Not To Rent.</span>
                 </p>
 
-                <div class="hbp-foot-socials">
+                <div class="hbp-foot-socials" style="display: none;">
                     {{-- X / Twitter --}}
                     <a href="#" class="hbp-foot-social-btn" aria-label="X / Twitter">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
@@ -331,9 +344,9 @@
             <div class="hbp-foot-fade" style="transition-delay:0.08s;">
                 <p class="hbp-foot-col-label">Platform</p>
                 <ul class="hbp-foot-links">
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Demo</a></li>
+                    <li><a href="{{ route('features') }}">Features</a></li>
+                    <li><a href="{{ route('pricing') }}">Pricing</a></li>
+                    <li><a href="{{ route('demo') }}">Demo</a></li>
                 </ul>
             </div>
 
@@ -341,9 +354,8 @@
             <div class="hbp-foot-fade" style="transition-delay:0.14s;">
                 <p class="hbp-foot-col-label">Support</p>
                 <ul class="hbp-foot-links">
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="{{ route('faq') }}">FAQ</a></li>
+                    <li><a href="{{ route('contact') }}">Contact</a></li>
                 </ul>
             </div>
 
@@ -393,7 +405,6 @@
             <nav class="hbp-foot-bar-links">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
-                <a href="#">Cookie Policy</a>
             </nav>
         </div>
 

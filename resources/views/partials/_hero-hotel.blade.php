@@ -173,7 +173,7 @@
                 <div class="flex flex-col sm:flex-row gap-3 mb-5">
 
                     {{-- Primary: View Demo --}}
-                    <a href="#demo"
+                    <a href="{{ route('demo') }}"
                        class="hbp-btn-primary inline-flex items-center justify-center gap-2.5 text-white font-bold px-8 py-4 rounded-xl"
                        style="font-size:15px;">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -184,7 +184,7 @@
                     </a>
 
                     {{-- Secondary: View Pricing --}}
-                    <a href="#pricing"
+                    <a href="{{ route('pricing') }}"
                        class="hbp-btn-secondary inline-flex items-center justify-center gap-2 font-semibold px-8 py-4 rounded-xl"
                        style="font-size:15px; color:#374151;">
                         View Pricing

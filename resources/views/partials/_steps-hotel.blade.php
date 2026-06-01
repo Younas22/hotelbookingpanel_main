@@ -572,7 +572,7 @@
             </div>
 
             <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-                <a href="#pricing"
+                <a href="{{ route('demo') }}"
                    class="inline-flex items-center gap-2.5 text-white font-bold px-8 py-3.5 rounded-xl"
                    style="background: #3B82F6; box-shadow: 0 4px 22px rgba(59,130,246,0.38); font-size: 14.5px; transition: transform 0.18s ease, box-shadow 0.18s ease;"
                    onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 30px rgba(59,130,246,0.45)'"
@@ -582,7 +582,7 @@
                     </svg>
                     Get Started Today
                 </a>
-                <a href="#demo"
+                <a href="{{ route('demo') }}"
                    class="inline-flex items-center gap-2 font-semibold px-8 py-3.5 rounded-xl"
                    style="background: #ffffff; border: 2px solid #e2e8f0; color: #374151; font-size: 14.5px; transition: border-color 0.18s ease, transform 0.18s ease;"
                    onmouseover="this.style.borderColor='#93c5fd';this.style.transform='translateY(-2px)'"

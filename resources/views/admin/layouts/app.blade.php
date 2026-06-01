@@ -3,40 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Admin') – LimoSchedule</title>
+    <title>@yield('title', 'Admin') – HotelBookingPanel</title>
     <script src="https://cdn.tailwindcss.com"></script>
     @stack('styles')
 </head>
-<body class="bg-gray-100 min-h-screen">
+<body class="min-h-screen" style="background: #f1f5f9; font-family: 'Inter', sans-serif;">
 
     <!-- Navbar -->
-    <nav class="bg-gray-900 text-white px-6 py-3 flex items-center justify-between shadow-lg sticky top-0 z-40">
+    <nav class="sticky top-0 z-40 px-6 py-0 flex items-center justify-between"
+         style="background: #ffffff; border-bottom: 1px solid #e2e8f0; box-shadow: 0 1px 6px rgba(0,0,0,0.05); height: 60px;">
         <div class="flex items-center gap-4">
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-yellow-500 rounded-lg flex items-center justify-center shrink-0">
-                    <svg class="w-5 h-5 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            <!-- Brand -->
+            <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
+                     style="background: linear-gradient(135deg, #1d4ed8, #3B82F6);">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                        <polyline stroke="white" stroke-width="1.5" points="9 22 9 12 15 12 15 22" fill="none"/>
                     </svg>
                 </div>
-                <span class="font-bold text-lg">LimoSchedule</span>
+                <span class="font-bold text-base" style="color: #0f172a;">HotelBookingPanel</span>
             </div>
+
             <!-- Nav Links -->
             <div class="hidden sm:flex items-center gap-1 ml-4">
                 <a href="{{ route('admin.dashboard') }}"
-                   class="px-3 py-1.5 rounded-lg text-sm transition {{ request()->routeIs('admin.dashboard') ? 'bg-yellow-500 text-gray-900 font-medium' : 'text-gray-300 hover:bg-gray-700' }}">
+                   class="px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-150 {{ request()->routeIs('admin.dashboard') ? 'text-white' : 'hover:bg-slate-100' }}"
+                   style="{{ request()->routeIs('admin.dashboard') ? 'background: linear-gradient(135deg, #1d4ed8, #3B82F6); color: white;' : 'color: #475569;' }}">
                     Demo Requests
-                </a>
-                <a href="{{ route('admin.blogs.index') }}"
-                   class="px-3 py-1.5 rounded-lg text-sm transition {{ request()->routeIs('admin.blogs*') ? 'bg-yellow-500 text-gray-900 font-medium' : 'text-gray-300 hover:bg-gray-700' }}">
-                    Blogs
                 </a>
             </div>
         </div>
+
         <div class="flex items-center gap-3">
-            <span class="text-gray-400 text-sm hidden md:block">{{ Auth::user()->name }}</span>
+            <span class="text-sm hidden md:block" style="color: #94a3b8;">{{ Auth::user()->name }}</span>
             <form method="POST" action="{{ route('admin.logout') }}">
                 @csrf
-                <button type="submit" class="bg-gray-700 hover:bg-gray-600 text-white text-sm px-4 py-1.5 rounded-lg transition">
+                <button type="submit"
+                    class="text-sm px-4 py-1.5 rounded-lg font-medium transition-colors duration-150"
+                    style="background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0;"
+                    onmouseover="this.style.background='#e2e8f0';"
+                    onmouseout="this.style.background='#f1f5f9';">
                     Logout
                 </button>
             </form>

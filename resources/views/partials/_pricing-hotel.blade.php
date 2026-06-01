@@ -658,7 +658,7 @@
                         <div style="height: 1px; background: linear-gradient(90deg, transparent, #e2e8f0 30%, #e2e8f0 70%, transparent); margin-bottom: 24px;"></div>
 
                         {{-- CTA Buttons --}}
-                        <a href="#demo" class="hbp-price-btn-primary">
+                        <a href="{{ route('demo') }}" class="hbp-price-btn-primary">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/>
                             </svg>
@@ -668,7 +668,7 @@
                             </svg>
                         </a>
 
-                        <a href="#contact" class="hbp-price-btn-secondary">
+                        <a href="{{ route('contact') }}" class="hbp-price-btn-secondary">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/>
                             </svg>
