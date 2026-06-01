@@ -19,6 +19,8 @@ Route::get('/voice-search', [PublicController::class, 'voiceSearch'])->name('voi
 Route::get('/ai-agent', [PublicController::class, 'aiAgent'])->name('ai-agent');
 Route::get('/admin-panel', [PublicController::class, 'adminPanel'])->name('admin-panel');
 Route::get('/how-it-works', [PublicController::class, 'howItWorks'])->name('how-it-works');
+Route::get('/pricing', [PublicController::class, 'pricing'])->name('pricing');
+Route::get('/demo', [PublicController::class, 'demo'])->name('demo');
 Route::get('/faq', [PublicController::class, 'faq'])->name('faq');
 Route::get('/contact', [PublicController::class, 'contact'])->name('contact');
 

@@ -27,14 +27,40 @@ class PublicController extends Controller
     public function features()
     {
         $seo = [
-            'title'       => 'Features — LimoSchedule',
-            'description' => 'Explore all features of LimoSchedule: AI voice booking, automated dispatch, fleet management, white-label admin panel, and more.',
+            'title'       => 'Features — HotelBookingPanel',
+            'description' => 'Explore all features of HotelBookingPanel: online booking engine, channel manager, admin dashboard, guest portal, and more.',
             'canonical'   => route('features'),
             'og_type'     => 'website',
             'og_image'    => url('public/logo/favicon.png'),
             'twitter_card'=> 'summary',
         ];
         return view('pages.features', compact('seo'));
+    }
+
+    public function pricing()
+    {
+        $seo = [
+            'title'       => 'Pricing — HotelBookingPanel',
+            'description' => 'One-time license. Own your hotel booking software forever. No monthly fees, no commissions, full source code included.',
+            'canonical'   => route('pricing'),
+            'og_type'     => 'website',
+            'og_image'    => url('public/logo/favicon.png'),
+            'twitter_card'=> 'summary',
+        ];
+        return view('pages.pricing', compact('seo'));
+    }
+
+    public function demo()
+    {
+        $seo = [
+            'title'       => 'Book a Demo — HotelBookingPanel',
+            'description' => 'See HotelBookingPanel in action. Request a live demo and watch the full booking flow, admin panel, and guest experience.',
+            'canonical'   => route('demo'),
+            'og_type'     => 'website',
+            'og_image'    => url('public/logo/favicon.png'),
+            'twitter_card'=> 'summary',
+        ];
+        return view('pages.demo', compact('seo'));
     }
 
     public function voiceSearch()
@@ -92,8 +118,8 @@ class PublicController extends Controller
     public function faq()
     {
         $seo = [
-            'title'       => 'FAQ — LimoSchedule',
-            'description' => 'Answers to common questions about LimoSchedule: licensing, self-hosting, white-labeling, AI voice agent, and installation.',
+            'title'       => 'FAQ — HotelBookingPanel',
+            'description' => 'Answers to common questions about HotelBookingPanel: licensing, installation, features, and support.',
             'canonical'   => route('faq'),
             'og_type'     => 'website',
             'og_image'    => url('public/logo/favicon.png'),
