@@ -68,25 +68,14 @@ Route::get('/robots.txt', function () {
 
 // Sitemap
 Route::get('/sitemap.xml', function () {
-    $blogs = \App\Models\Blog::where('status', 'published')
-        ->orderBy('updated_at', 'desc')
-        ->get(['slug', 'updated_at']);
-
-    $urls = collect();
-
-    $urls->push(['loc' => url('/'),                    'lastmod' => now()->toDateString(), 'priority' => '1.0', 'changefreq' => 'weekly']);
-    $urls->push(['loc' => route('features'),           'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
-    $urls->push(['loc' => route('ai-agent'),           'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
-    $urls->push(['loc' => route('admin-panel'),        'lastmod' => now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'monthly']);
-    $urls->push(['loc' => route('voice-search'),       'lastmod' => now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'monthly']);
-    $urls->push(['loc' => route('how-it-works'),       'lastmod' => now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'monthly']);
-    $urls->push(['loc' => route('faq'),                'lastmod' => now()->toDateString(), 'priority' => '0.7', 'changefreq' => 'monthly']);
-    $urls->push(['loc' => route('contact'),            'lastmod' => now()->toDateString(), 'priority' => '0.7', 'changefreq' => 'monthly']);
-    $urls->push(['loc' => route('blogs.index'),        'lastmod' => $blogs->first()?->updated_at->toDateString() ?? now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'daily']);
-
-    foreach ($blogs as $blog) {
-        $urls->push(['loc' => route('blog.show', $blog->slug), 'lastmod' => $blog->updated_at->toDateString(), 'priority' => '0.7', 'changefreq' => 'monthly']);
-    }
+    $urls = collect([
+        ['loc' => url('/'),              'lastmod' => now()->toDateString(), 'priority' => '1.0', 'changefreq' => 'weekly'],
+        ['loc' => route('features'),     'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly'],
+        ['loc' => route('pricing'),      'lastmod' => now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'monthly'],
+        ['loc' => route('demo'),         'lastmod' => now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'monthly'],
+        ['loc' => route('faq'),          'lastmod' => now()->toDateString(), 'priority' => '0.7', 'changefreq' => 'monthly'],
+        ['loc' => route('contact'),      'lastmod' => now()->toDateString(), 'priority' => '0.7', 'changefreq' => 'monthly'],
+    ]);
 
     $xml = view('sitemap', compact('urls'));
     return response($xml, 200)->header('Content-Type', 'application/xml');

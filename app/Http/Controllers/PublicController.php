@@ -13,8 +13,8 @@ class PublicController extends Controller
         $countries = Country::orderBy('name')->get();
 
         $seo = [
-            'title'       => 'LimoSchedule — Self-Hosted Automated Limo Booking System',
-            'description' => 'Self-hosted, white-label limo booking system. Install on your own server in 30 minutes. Full source code included. One-time license.',
+            'title'       => 'HotelBookingPanel — Self-Hosted Automated Hotel Booking System',
+            'description' => 'Self-hosted, white-label hotel booking system. Install on your own server in 30 minutes. Full source code included. One-time license.',
             'canonical'   => url('/'),
             'og_type'     => 'website',
             'og_image'    => url('public/logo/favicon.png'),
@@ -66,8 +66,8 @@ class PublicController extends Controller
     public function voiceSearch()
     {
         $seo = [
-            'title'       => 'Voice Search Booking — LimoSchedule',
-            'description' => 'Let customers book limo rides by speaking naturally. LimoSchedule\'s AI voice search understands pickup, drop-off, date, and vehicle preference instantly.',
+            'title'       => 'Voice Search Booking — HotelBookingPanel',
+            'description' => 'Let guests book hotel rooms by speaking naturally. HotelBookingPanel\'s AI voice search understands destination, check-in, check-out, and room preference instantly.',
             'canonical'   => route('voice-search'),
             'og_type'     => 'website',
             'og_image'    => url('public/logo/favicon.png'),
@@ -79,8 +79,8 @@ class PublicController extends Controller
     public function aiAgent()
     {
         $seo = [
-            'title'       => 'AI Voice Call Agent — LimoSchedule',
-            'description' => 'Your AI dispatcher answers every call 24/7, collects trip details, quotes pricing, checks availability, and confirms bookings automatically.',
+            'title'       => 'AI Voice Call Agent — HotelBookingPanel',
+            'description' => 'Your AI front-desk agent answers every call 24/7, collects guest details, quotes room rates, checks availability, and confirms bookings automatically.',
             'canonical'   => route('ai-agent'),
             'og_type'     => 'website',
             'og_image'    => url('public/logo/favicon.png'),
@@ -92,8 +92,8 @@ class PublicController extends Controller
     public function adminPanel()
     {
         $seo = [
-            'title'       => 'Admin Panel — LimoSchedule',
-            'description' => 'Manage bookings, fleet, pricing, analytics, and your team from one powerful white-label admin dashboard. Complete control, zero limitations.',
+            'title'       => 'Admin Panel — HotelBookingPanel',
+            'description' => 'Manage bookings, rooms, pricing, analytics, and your team from one powerful white-label admin dashboard. Complete control, zero limitations.',
             'canonical'   => route('admin-panel'),
             'og_type'     => 'website',
             'og_image'    => url('public/logo/favicon.png'),
@@ -105,8 +105,8 @@ class PublicController extends Controller
     public function howItWorks()
     {
         $seo = [
-            'title'       => 'How It Works — LimoSchedule',
-            'description' => 'See how LimoSchedule works in 3 simple steps: install on your server, configure your fleet and pricing, then go live and start taking automated bookings.',
+            'title'       => 'How It Works — HotelBookingPanel',
+            'description' => 'See how HotelBookingPanel works in 3 simple steps: install on your server, configure your rooms and pricing, then go live and start taking automated bookings.',
             'canonical'   => route('how-it-works'),
             'og_type'     => 'website',
             'og_image'    => url('public/logo/favicon.png'),
@@ -132,8 +132,8 @@ class PublicController extends Controller
     {
         $countries = Country::orderBy('name')->get();
         $seo = [
-            'title'       => 'Contact — LimoSchedule',
-            'description' => 'Get in touch with the LimoSchedule team. Request a demo, ask questions, or discuss your limo business needs.',
+            'title'       => 'Contact — HotelBookingPanel',
+            'description' => 'Get in touch with the HotelBookingPanel team. Request a demo, ask questions, or discuss your hotel business needs.',
             'canonical'   => route('contact'),
             'og_type'     => 'website',
             'og_image'    => url('public/logo/favicon.png'),
@@ -157,8 +157,8 @@ class PublicController extends Controller
         }
 
         $seo = [
-            'title'       => 'Blog — LimoSchedule',
-            'description' => 'Read the latest articles, guides and news about limo booking automation, dispatch software, and the limo industry on the LimoSchedule blog.',
+            'title'       => 'Blog — HotelBookingPanel',
+            'description' => 'Read the latest articles, guides and news about hotel booking automation, property management software, and the hospitality industry on the HotelBookingPanel blog.',
             'canonical'   => route('blogs.index'),
             'og_type'     => 'website',
             'og_image'    => url('public/logo/favicon.png'),
@@ -176,8 +176,8 @@ class PublicController extends Controller
             ->firstOrFail();
 
         $seo = [
-            'title'              => ($blog->meta_title ?: $blog->title) . ' — LimoSchedule Blog',
-            'description'        => $blog->meta_description ?: ($blog->excerpt ?: 'Read this article on the LimoSchedule blog.'),
+            'title'              => ($blog->meta_title ?: $blog->title) . ' — HotelBookingPanel Blog',
+            'description'        => $blog->meta_description ?: ($blog->excerpt ?: 'Read this article on the HotelBookingPanel blog.'),
             'canonical'          => route('blog.show', $blog->slug),
             'og_type'            => 'article',
             'og_image'           => $blog->featured_image ? url('public/' . $blog->featured_image) : url('public/logo/favicon.png'),
