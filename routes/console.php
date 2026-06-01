@@ -1,0 +1,15 @@
+<?php
+
+use Illuminate\Foundation\Inspiring;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Schedule;
+
+Artisan::command('inspire', function () {
+    $this->comment(Inspiring::quote());
+})->purpose('Display an inspiring quote');
+
+// Publish scheduled blog posts every hour
+Schedule::command('blog:publish-scheduled')->everyMinute();
+
+// // Test cron job - runs every minute
+// Schedule::command('cron:test')->everyMinute();
