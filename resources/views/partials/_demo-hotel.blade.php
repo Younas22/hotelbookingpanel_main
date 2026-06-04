@@ -393,7 +393,7 @@
                             <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/>
                             </svg>
-                            <span style="font-size:10px;color:#94a3b8;">[INSERT CUSTOMER WEBSITE DEMO URL]</span>
+                            <span style="font-size:10px;color:#94a3b8;">demo.hotelbookingpanel.com</span>
                         </div>
                     </div>
                 </div>
@@ -509,7 +509,7 @@
                     <h3 class="hbp-demo-card-title">Customer Website Demo</h3>
                     <p class="hbp-demo-card-desc">See the hotel booking experience your customers will use. Browse hotels, search availability, view room details, and complete bookings online.</p>
 
-                    <a href="[INSERT CUSTOMER WEBSITE DEMO URL]" target="_blank" class="hbp-demo-btn-blue">
+                    <a href="https://demo.hotelbookingpanel.com" target="_blank" class="hbp-demo-btn-blue">
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/>
                         </svg>
@@ -538,7 +538,7 @@
                             <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/>
                             </svg>
-                            <span style="font-size:10px;color:#94a3b8;">[INSERT ADMIN PANEL URL]</span>
+                            <span style="font-size:10px;color:#94a3b8;">demo.hotelbookingpanel.com/login</span>
                         </div>
                     </div>
                 </div>
@@ -662,8 +662,8 @@
                         </div>
                         <div class="hbp-demo-cred-row">
                             <span class="hbp-demo-cred-label">Email</span>
-                            <span class="hbp-demo-cred-value">[INSERT DEMO EMAIL]</span>
-                            <button class="hbp-demo-cred-copy" title="Copy email" onclick="navigator.clipboard&&navigator.clipboard.writeText('[INSERT DEMO EMAIL]')">
+                            <span class="hbp-demo-cred-value">admin@hotelbookingpanel.com</span>
+                            <button class="hbp-demo-cred-copy" title="Copy email" onclick="navigator.clipboard&&navigator.clipboard.writeText('admin@hotelbookingpanel.com')">
                                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                                     <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
                                 </svg>
@@ -671,8 +671,8 @@
                         </div>
                         <div class="hbp-demo-cred-row">
                             <span class="hbp-demo-cred-label">Password</span>
-                            <span class="hbp-demo-cred-value">[INSERT DEMO PASSWORD]</span>
-                            <button class="hbp-demo-cred-copy" title="Copy password" onclick="navigator.clipboard&&navigator.clipboard.writeText('[INSERT DEMO PASSWORD]')">
+                            <span class="hbp-demo-cred-value">password</span>
+                            <button class="hbp-demo-cred-copy" title="Copy password" onclick="navigator.clipboard&&navigator.clipboard.writeText('password')">
                                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                                     <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
                                 </svg>
@@ -680,7 +680,7 @@
                         </div>
                     </div>
 
-                    <a href="[INSERT ADMIN PANEL URL]" target="_blank" class="hbp-demo-btn-dark">
+                    <a href="https://demo.hotelbookingpanel.com/login" target="_blank" class="hbp-demo-btn-dark">
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
                         </svg>
